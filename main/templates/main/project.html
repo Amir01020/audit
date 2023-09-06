@@ -16,36 +16,39 @@ about
         <h2 class="textGlav">
             Наши проекты
         </h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>СТИР</th>
-                    <th>Аудиторлик ташкилотининг номи</th>
-                    <th>Реестрга киритиш санаси </th>
-                    <th>Аудиторлик ташкилоти почта манзили</th>
-                    <th>Телефонлар</th>
-                    <th>Електрон манзили/ Веб-сайт</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-
-                {% for item in arr %}
-                <tr>
-                    <td>{{item.title}}</td>
-                    <td>{{item.full_text}}</td>
-                    <td>{{item.data}}</td>
-                    <td>{{item.gmail}}</td>
-                    <td>{{item.phone}}</td>
-                    <td>{{item.url_site}}</td>
+        <div class="box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>СТИР</th>
+                        <th>Аудиторлик ташкилотининг номи</th>
+                        <th>Реестрга киритиш санаси </th>
+                        <th>Аудиторлик ташкилоти почта манзили</th>
+                        <th>Телефонлар</th>
+                        <th>Електрон манзили/ Веб-сайт</th>
+                    </tr>
+                </thead>
+                <tbody>
                     
-                </tr>
-                {% endfor %}
-                
-                
-
-            </tbody>
-        </table>
+    
+                    {% for item in arr %}
+                    <tr>
+                        <td>{{item.title}}</td>
+                        <td>{{item.full_text}}</td>
+                        <td>{{item.data}}</td>
+                        <td>{{item.gmail}}</td>
+                        <td>{{item.phone}}</td>
+                        <td>{{item.url_site}}</td>
+                        
+                    </tr>
+                    {% endfor %}
+                    
+                    
+    
+                </tbody>
+            </table>
+        </div>
+        
     </div>
 </section>
 {% endblock %}

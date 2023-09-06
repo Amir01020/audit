@@ -5,6 +5,10 @@
 .project h2 {
   margin-bottom: 50px;
 }
+.project .box {
+  overflow-x: auto;
+  width: 100%;
+}
 .project table th {
   padding: 5px;
   border: 1px solid #1E50AB;

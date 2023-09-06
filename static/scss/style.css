@@ -660,6 +660,9 @@ footer .myBlock .elem {
   header {
     height: 70px;
   }
+  main .forms .box .block:nth-child(2) .myBox {
+    padding: 20px 10px;
+  }
   footer .box {
     flex-wrap: wrap;
     gap: 20px;

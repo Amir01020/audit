@@ -1,9 +1,17 @@
 .project {
     margin-top: 0px !important;
     padding-top: 150px;
-    h2{
+
+    h2 {
         margin-bottom: 50px;
     }
+
+    .box {
+        overflow-x: auto;
+        width: 100%;
+        // display: none;
+    }
+
     table {
         th {
             // display: inline-block;
