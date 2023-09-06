@@ -272,7 +272,6 @@ main .project {
 main .project .box {
   overflow-x: auto;
   width: 100%;
-  display: none;
 }
 main .project table th {
   padding: 5px;
