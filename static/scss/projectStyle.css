@@ -1,0 +1,21 @@
+.project {
+  margin-top: 0px !important;
+  padding-top: 150px;
+}
+.project h2 {
+  margin-bottom: 50px;
+}
+.project table th {
+  padding: 5px;
+  border: 1px solid #1E50AB;
+  text-align: center;
+  background-color: #1E50AB;
+  color: #fff;
+}
+.project table td {
+  padding: 5px;
+  border: 1px solid #1E50AB;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}/*# sourceMappingURL=projectStyle.css.map */

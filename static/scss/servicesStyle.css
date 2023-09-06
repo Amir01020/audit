@@ -1,0 +1,47 @@
+.servicesHome {
+  padding-top: 100px;
+}
+.servicesHome .box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.servicesHome .box .block {
+  margin-bottom: 20px;
+  width: 90%;
+  border: #1E50AB 2px solid;
+}
+.servicesHome .box .block:hover {
+  transform: scale(1.05);
+}
+.servicesHome .box .block .title {
+  background-color: #1E50AB;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+.servicesHome .box .block .title h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.servicesHome .box .block .myText {
+  overflow: hidden;
+  height: 0;
+}
+.servicesHome .box .block .myText p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+}
+.servicesHome .box .block .myTextActive {
+  padding: 20px;
+  height: auto;
+}/*# sourceMappingURL=servicesStyle.css.map */

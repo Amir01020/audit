@@ -1,0 +1,28 @@
+.project {
+    margin-top: 0px !important;
+    padding-top: 150px;
+    h2{
+        margin-bottom: 50px;
+    }
+    table {
+        th {
+            // display: inline-block;
+            padding: 5px;
+            border: 1px solid #1E50AB;
+            text-align: center;
+            background-color: #1E50AB;
+            color: #fff;
+
+        }
+
+        td {
+            padding: 5px;
+            border: 1px solid #1E50AB;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+
+
+        }
+    }
+}

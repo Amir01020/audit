@@ -1,0 +1,38 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'scss/newsStyle.css' %}">
+{% endblock %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+<section class="newsHome">
+    <div class="cont">
+        <h2 class="textGlav">
+            Новости
+        </h2>
+        <div class="box">
+
+            {% for item in arr %}
+            <div class="block">
+
+                <h3>
+                    {{item.title}}
+                </h3>
+                <p>
+                    {{item.full_text}}
+                </p>
+                
+                <div class="newsText">
+                    <h4>дата выхода</h4>
+                    <p>{{item.data}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

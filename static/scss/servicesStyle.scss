@@ -1,0 +1,55 @@
+
+@mixin f($s, $a) {
+    display: flex;
+    justify-content: $s;
+    align-items: $a;
+}
+.servicesHome{
+    padding-top: 100px;
+    .box{
+        margin-top: 50px;
+        @include f(center,center );
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        .block{
+            // 
+            margin-bottom: 20px;
+            width: 90%;
+            border: #1E50AB 2px solid;
+            
+            &:hover{
+                transform: scale(1.05);
+            }
+            .title{
+                background-color: #1E50AB;
+                @include f(start,center );
+                gap: 10px;
+                padding: 20px;
+                cursor: pointer;
+                h4{
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+            .myText{
+                p{
+                    font-size: 16px ;
+                    font-weight: 300;
+                    line-height: 150% ;
+                }
+                overflow: hidden;
+                height: 0;
+            }
+            .myTextActive{
+                padding: 20px;
+                
+                height: auto;
+                
+            }
+            
+
+        }
+    }
+}

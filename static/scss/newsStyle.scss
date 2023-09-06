@@ -1,0 +1,49 @@
+
+@mixin f($s, $a) {
+    display: flex;
+    justify-content: $s;
+    align-items: $a;
+}
+.newsHome{
+    padding-top: 150px;
+    .box{
+        margin-top: 50px;
+        @include f(space-between, center);
+        flex-direction: column;
+        gap: 50px;
+        .block{
+            width: 90%;
+            &:hover{
+                transform: scale(1.05);
+                // border: 2px solid #1E50AB;
+                box-shadow: 0px 0px 40px #a5cefd;
+            }
+            
+            // border-radius: 20px;
+            padding: 20px;
+            .newsText{
+                
+                @include f(space-between, center);
+                margin-top: 20px;
+                h4{
+                    font-size: 20px;
+                }
+                p{
+                    display: block;
+                    padding: 10px;
+                    background-color: gray;
+                    color: #fff;
+                }
+
+            }
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 150%;
+            }
+            p{
+                margin-top: 20px;
+            }
+        }
+    }
+}

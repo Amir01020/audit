@@ -1,0 +1,238 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block title %}
+KOMIL ISHONCH
+{% endblock %}
+
+
+
+
+{% block content %}
+<section class="head">
+    <div class="cont">
+        <div class="box">
+            <div class="elem">
+                <div class="logo">
+                    <img src="{% static 'img/logo.svg' %}" alt="">
+                    <h1>KOMIL <br> ISHONCH</h1>
+                </div>
+                <h2>Аудиторская организация</h2>
+            </div>
+            <div class="elem">
+                <div class="block">
+                    <p>Надежная правовая защита
+                        без затрат на содержание
+                        собственного юридического
+                        отдела
+                    </p>
+
+                </div>
+                <div class="block">
+                    <p>Надежная правовая защита
+                        без затрат на содержание
+                        собственного юридического
+                        отдела
+                    </p>
+
+                </div>
+                <div class="block">
+                    <p>Надежная правовая защита
+                        без затрат на содержание
+                        собственного юридического
+                        отдела
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="coment">
+    <div class="cont">
+        <h2 class="textGlav">о нашей компании</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam deserunt reprehenderit hic saepe corporis
+            similique, molestiae illum cumque possimus temporibus odit cum eaque, ipsa enim earum ducimus! Ipsa,
+            recusandae sed! <br>
+            At illo consequatur culpa perspiciatis consequuntur, esse, explicabo aperiam inventore perferendis
+            voluptatum ut excepturi doloribus, tempora ducimus sunt atque nisi. Cum fugiat sequi dolores reprehenderit
+            nesciunt in distinctio! Animi, reiciendis! <br>
+            Natus sunt inventore ut iusto velit id sequi! Fugit fugiat optio qui dolorum, ullam dolor corrupti rerum
+            possimus hic quod dolores provident veritatis sequi vero odio itaque accusantium minima ea?
+        </p>
+    </div>
+</section>
+<section class="services">
+    <div class="cont">
+        <h2 class="textGlav text">
+            Наши услуги
+        </h2>
+        <div class="box">
+
+            <div class="block">
+                <div class="img">
+                    <img src="{% static 'img/log.svg' %}" alt="">
+                </div>
+
+                <p>
+                    Надежная правовая защита
+                    без затрат на содержание
+                    собственного юридического
+                    отдела
+                </p>
+
+            </div>
+            <div class="block">
+                <div class="img">
+                    <img src="{% static 'img/log.svg' %}" alt="">
+                </div>
+
+                <p>
+                    Надежная правовая защита
+                    без затрат на содержание
+                    собственного юридического
+                    отдела
+                </p>
+
+            </div>
+            <div class="block">
+                <div class="img">
+                    <img src="{% static 'img/log.svg' %}" alt="">
+                </div>
+
+                <p>
+                    Надежная правовая защита
+                    без затрат на содержание
+                    собственного юридического
+                    отдела
+                </p>
+
+            </div>
+        </div>
+        <div class="butto">
+            <a href="{% url 'services' %}">
+                подробнее
+            </a>
+        </div>
+    </div>
+</section>
+<section class="project">
+    <div class="cont">
+        <div class="box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>СТИР</th>
+                        <th>Аудиторлик ташкилотининг номи</th>
+                        <th>Реестрга киритиш санаси </th>
+                        <th>Аудиторлик ташкилоти почта манзили</th>
+                        <th>Телефонлар</th>
+                        <th>Електрон манзили/ Веб-сайт</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>309604672</td>
+                        <td>Аудиторская организация "ABCO AUDIT ASSURANCE" в форме ООО</td>
+                        <td>19.09.2022</td>
+                        <td>г.Ташкент, Алмазарский район, Себзор МФЙ, 46в-дом </td>
+                        <td>+998998281405</td>
+                        <td>djamilya.nazarova.96@mail.ru; dalila-86@mail.ru</td>
+                    </tr>
+                    <tr>
+                        <td>309604672</td>
+                        <td>Аудиторская организация "ABCO AUDIT ASSURANCE" в форме ООО</td>
+                        <td>19.09.2022</td>
+                        <td>г.Ташкент, Алмазарский район, Себзор МФЙ, 46в-дом </td>
+                        <td>+998998281405</td>
+                        <td>djamilya.nazarova.96@mail.ru; dalila-86@mail.ru</td>
+                    </tr>
+                    <tr>
+                        <td>309604672</td>
+                        <td>Аудиторская организация "ABCO AUDIT ASSURANCE" в форме ООО</td>
+                        <td>19.09.2022</td>
+                        <td>г.Ташкент, Алмазарский район, Себзор МФЙ, 46в-дом </td>
+                        <td>+998998281405</td>
+                        <td>djamilya.nazarova.96@mail.ru; dalila-86@mail.ru</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<div class="cont">
+    <h2 class="textGlav text">Партнёры</h2>
+</div>
+<section class="partner">
+
+    <div class="marquee-infinite">
+        <div>
+            <span>
+                <img src="{% static 'img/img1.png' %}" alt="">
+                <img src="{% static 'img/img2.png' %}" alt="">
+                <img src="{% static 'img/img3.png' %}" alt="">
+                <img src="{% static 'img/img4.png' %}" alt="">
+            </span>
+            <span>
+                <img src="{% static 'img/img1.png' %}" alt="">
+                <img src="{% static 'img/img2.png' %}" alt="">
+                <img src="{% static 'img/img3.png' %}" alt="">
+                <img src="{% static 'img/img4.png' %}" alt="">
+            </span>
+        </div>
+    </div>
+    <div class="marquee-infinite">
+        <div class="ssss">
+            <span>
+                <img src="{% static 'img/img4.png' %}" alt="">
+                <img src="{% static 'img/img3.png' %}" alt="">
+                <img src="{% static 'img/img2.png' %}" alt="">
+                <img src="{% static 'img/img1.png' %}" alt="">
+            </span>
+            <span>
+                <img src="{% static 'img/img4.png' %}" alt="">
+                <img src="{% static 'img/img3.png' %}" alt="">
+                <img src="{% static 'img/img2.png' %}" alt="">
+                <img src="{% static 'img/img1.png' %}" alt="">
+            </span>
+        </div>
+    </div>
+
+</section>
+<section class="forms">
+    <div class="cont">
+        <div class="box">
+            <div class="block">
+                <img src="{% static 'img/fonForms.png' %}" alt="">
+                <p>Найдём решение</p>
+            </div>
+            <div class="block">
+                <form action="">
+                    <div class="myBox">
+
+                        <h3>Оставить заявку на защиту бизнеса</h3>
+                        <input type="text" placeholder="Ваше имя" name="" id="name" required>
+                        <input type="number" placeholder="Телефон" name="" id="number" required>
+                        <textarea name="" id="comment" placeholder="Описание ситуации" cols="30" required
+                            rows="10"></textarea>
+                        <p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных</p>
+
+
+                    </div>
+                    <div class="btn" id="btnSubmit">
+                        <button>Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block script %}
+<script defer src="{% static 'js/forms.js' %}"></script>
+{% endblock %}
