@@ -166,6 +166,20 @@ main .coment p {
   line-height: 126.188%;
   margin-top: 20px;
 }
+main .coment .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 20px;
+}
+main .coment .box .block {
+  height: 100%;
+}
+main .coment .box .block img {
+  width: 320px;
+}
 main .services {
   margin-top: 100px;
 }

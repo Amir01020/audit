@@ -11,6 +11,7 @@
 }
 .newsHome .box .block {
   width: 90%;
+  border: 2px solid #a5cefd;
   padding: 20px;
 }
 .newsHome .box .block:hover {

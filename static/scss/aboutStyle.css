@@ -1,3 +1,7 @@
+.cont {
+  padding: 0 10px;
+}
+
 .aboutHome {
   padding-top: 150px;
 }
@@ -40,4 +44,74 @@
   padding: 0;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.employees {
+  margin-top: 100px;
+}
+.employees .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.employees .box hr {
+  margin-bottom: 10px;
+}
+.employees .box .block {
+  width: 300px;
+}
+.employees .box .block .img {
+  overflow: hidden;
+  height: 200px;
+}
+.employees .box .block .img img {
+  width: 100%;
+}
+.employees .box .block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #858585;
+}
+.employees .box .block .companiText {
+  background-color: #1E50AB;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  min-height: 200px;
+}
+.employees .box .block .companiText h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.employees .box .block .companiText p {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 150%;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .employees .box {
+    justify-content: center;
+  }
+}
+.lists {
+  margin-top: 100px;
+}
+.lists .box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.lists .box img {
+  width: 49%;
+}
+.lists .tr {
+  width: 100%;
+  margin-top: 50px;
 }/*# sourceMappingURL=aboutStyle.css.map */

@@ -195,6 +195,18 @@ main {
             // width: 80%;
             margin-top: 20px;
         }
+        .box{
+            @include f(center,center );
+            height: fit-content;
+            gap: 20px;
+            .block{
+                // width: 49%;
+                height: 100%;
+                img{
+                    width: 320px;
+                }
+            }
+        }
     }
 
     .services {

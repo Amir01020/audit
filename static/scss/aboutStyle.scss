@@ -1,3 +1,12 @@
+@mixin f($s, $a) {
+    display: flex;
+    justify-content: $s;
+    align-items: $a;
+}
+
+.cont{
+    padding: 0 10px;
+}
 .aboutHome {
     padding-top: 150px;
     h2{
@@ -54,5 +63,86 @@
             margin-top: 50px;
             margin-bottom: 20px;
         }
+    }
+}
+
+.employees{
+    margin-top: 100px;
+    .box{
+        // justify-content: ;
+        @include f(space-between,center );
+        gap: 20px;
+        flex-wrap: wrap;
+        hr{
+            margin-bottom: 10px;
+        }
+        .block{
+            width: 300px;
+            // border: 2px solid #1E50AB;
+            // box-shadow: 0 0 20px #858585;
+            .img{
+                overflow: hidden;
+                height: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0 0 20px #858585;
+            }
+            .companiText{
+                background-color: #1E50AB;
+                color: #fff;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                min-height: 200px;
+                
+                
+                h4{
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 200;
+                    line-height: 150%;
+                    opacity: 0.8;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    .employees .box{
+        justify-content: center;
+    }
+}
+
+
+
+
+.lists{
+    margin-top: 100px;
+
+    .box{
+        width: 100%;
+        @include f(center,center );
+        gap: 10px;
+
+        img{
+            width: 49%;
+        }
+    }
+    .tr{
+        width: 100%;
+        margin-top: 50px ;
     }
 }
