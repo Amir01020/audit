@@ -25,6 +25,11 @@ burgerMenu.onclick=()=>{
 
 urlBurger.forEach(i => {
     i.onclick=()=>{
-        burgerMenu.click()
+        setTimeout(() => {
+            burgerMenubloc.classList.remove('burgerActive')
+        }, 200);
+        burgerMenu.src = '/static/img/menu.svg'
+        burgerBox.classList.remove('burgerBox')
+        params = true
     }
 });
