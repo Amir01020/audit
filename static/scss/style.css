@@ -399,7 +399,8 @@ main .forms .box .block:nth-child(2) .btn button {
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
-  line-height: 126.188%; /* 35.333px */
+  line-height: 126.188%;
+  /* 35.333px */
 }
 main .burger {
   width: 100%;
@@ -609,6 +610,58 @@ footer .myBlock .elem {
   font-weight: 400;
   line-height: 150%;
   opacity: 0.6;
+}
+
+.modalComment {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4745098039);
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.modalComment .box {
+  position: relative;
+  max-width: 500px;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 100px auto;
+  border: #1E50AB solid 4px;
+}
+.modalComment .box h2 {
+  margin-bottom: 30px;
+}
+.modalComment .box form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.411);
+  font-size: 18px;
+  padding: 10px;
+}
+.modalComment .box form button {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #1E50AB;
+  color: #fff;
+  border: 0;
+}
+
+.modalCommentActive {
+  display: block;
+}
+
+.clouseModalForms {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 @keyframes marquee-infinite {

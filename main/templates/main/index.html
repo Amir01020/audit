@@ -243,7 +243,7 @@ KOMIL ISHONCH
     <div class="cont">
         <div class="this_comment">
             <h2 class="textGlav">Отзывы Компании</h2>
-            <button>Оставить отзыв</button>
+            <button class="oupenModlComment">Оставить отзыв</button>
         </div>
         <div class="box">
             <div class="block">
@@ -272,6 +272,20 @@ KOMIL ISHONCH
         </div>
     </div>
 </section>
+
+<div class="modalComment">
+    <div class="box">
+        <img src="{% static 'img/clouse.svg' %}" class="clouseModalForms" alt="">
+        <h2 class="textGlav">Добавить отзыв</h2>
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form.name}}
+            {{form.full_text}}
+            <p>{{error}}</p>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+</div>
 
 {% endblock %}
 

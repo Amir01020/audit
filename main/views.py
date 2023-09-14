@@ -1,11 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import My_news,My_news_project,My_stat,Newe_comment
+from .forms import Newe_comment_Forms
 
 
 
 def index(request):
+
+    if request.method == 'POST':
+        form = Newe_comment_Forms(request.POST)
+        if form.is_valid:
+            form.save()
+        
+        else:
+            error = 'Форма не коректно заполнина'
+
+    form = Newe_comment_Forms()
     arr = Newe_comment.objects.all()
-    return render(request, 'main/index.html',{"arr":arr})
+    return render(request, 'main/index.html',{"arr":arr,"form":form})
 
 
 def services(request):
