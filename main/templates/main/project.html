@@ -20,26 +20,23 @@ about
             <table>
                 <thead>
                     <tr>
+                        <th>№</th>
                         <th>СТИР</th>
-                        <th>Аудиторлик ташкилотининг номи</th>
-                        <th>Реестрга киритиш санаси </th>
-                        <th>Аудиторлик ташкилоти почта манзили</th>
-                        <th>Телефонлар</th>
-                        <th>Електрон манзили/ Веб-сайт</th>
+                        <th>Ташкилотининг номи</th>
+                        <th>Хлоса</th>
+                        <th>Дата</th>
                     </tr>
                 </thead>
                 <tbody>
                     
     
                     {% for item in arr %}
-                    <tr>
-                        <td>{{item.title}}</td>
-                        <td>{{item.full_text}}</td>
+                    <tr id="{{item.id}}">
+                        <td>{{item.id}}</td>
+                        <td>{{item.stir}}</td>
+                        <td>{{item.names}}</td>
+                        <td>{{item.text}}</td>
                         <td>{{item.data}}</td>
-                        <td>{{item.gmail}}</td>
-                        <td>{{item.phone}}</td>
-                        <td>{{item.url_site}}</td>
-                        
                     </tr>
                     {% endfor %}
                     
@@ -47,6 +44,11 @@ about
     
                 </tbody>
             </table>
+
+
+            {% for item in arr %}
+                <!-- <img src="media/{{item.img}}" alt="">   -->
+            {% endfor %}
         </div>
         
     </div>

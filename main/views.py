@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from .models import My_news,My_news_project,My_stat
+from .models import My_news,My_news_project,My_stat,Newe_comment
 
 
 
 def index(request):
-    return render(request, 'main/index.html')
+    arr = Newe_comment.objects.all()
+    return render(request, 'main/index.html',{"arr":arr})
 
 
 def services(request):

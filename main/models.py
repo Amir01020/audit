@@ -15,16 +15,15 @@ class My_news(models.Model):
 
 
 class My_news_project(models.Model):
-    title = models.CharField('СТИР', max_length=250)
-    full_text = models.CharField('Аудиторлик ташкилотининг номи', max_length=250)
-    data = models.DateField('Реестрга киритиш санаси ')
-    gmail = models.CharField('почта', max_length=100)
-    phone = models.CharField('номер', max_length=13)
-    url_site = models.CharField('ссылка', max_length=250)
+    stir = models.CharField("СТИР", max_length=100)
+    names = models.CharField("Ташкилотининг номи", max_length=250)
+    text = models.CharField("Хлоса", max_length=250)
+    data = models.DateField("Дата")
+    img = models.ImageField(upload_to ='media/')
     
 
     def __str__(self):
-        return self.title
+        return self.stir
     
     class Meta:
         verbose_name = 'проект'
@@ -45,3 +44,36 @@ class My_stat(models.Model):
     class Meta:
         verbose_name = 'статья'
         verbose_name_plural = 'статьи'
+
+
+
+class This_project(models.Model):
+    stir = models.CharField("СТИР", max_length=100)
+    names = models.CharField("Ташкилотининг номи", max_length=250)
+    text = models.CharField("Хлоса", max_length=250)
+    data = models.DateField("Дата")
+    img = models.ImageField(upload_to ='media/')
+    
+
+    def __str__(self):
+        return self.stir
+    
+    class Meta:
+        verbose_name = 'проект_'
+        verbose_name_plural = 'проектЫ_'
+
+
+
+class Newe_comment(models.Model):
+    name = models.CharField('имя', max_length=70)
+    full_text = models.CharField('коментарий', max_length=70)
+   
+    
+
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name = 'коментарий'
+        verbose_name_plural = 'коментарии'
+

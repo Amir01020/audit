@@ -4,12 +4,14 @@
     align-items: $a;
 }
 
-.cont{
+.cont {
     padding: 0 10px;
 }
+
 .aboutHome {
     padding-top: 150px;
-    h2{
+
+    h2 {
         margin-bottom: 30px;
     }
 
@@ -23,8 +25,8 @@
     }
 }
 
-.aboutServices{
-    h3{
+.aboutServices {
+    h3 {
         font-size: 20px;
         line-height: 1.6;
         color: #000000;
@@ -32,7 +34,8 @@
         margin-top: 50px;
         margin-bottom: 30px;
     }
-    li{
+
+    li {
         font-size: 18px;
         line-height: 1.6;
         color: #000000;
@@ -40,21 +43,22 @@
         font-weight: 300;
     }
 }
-.clientAbout{
-    
-    h3{
+
+.clientAbout {
+
+    h3 {
         font-size: 20px;
         line-height: 1.6;
         color: #000000;
         font-weight: 900;
         // margin-top: 50px;
-        
-    }
-    .text{
 
     }
-    .box{
-        h3{
+
+    .text {}
+
+    .box {
+        h3 {
             font-size: 20px;
             line-height: 1.6;
             color: #000000;
@@ -66,46 +70,49 @@
     }
 }
 
-.employees{
+.employees {
     margin-top: 100px;
-    .box{
+
+    .box {
         // justify-content: ;
-        @include f(space-between,center );
-        gap: 20px;
+        @include f(center, center);
+        gap: 50px;
         flex-wrap: wrap;
-        hr{
+
+        hr {
             margin-bottom: 10px;
         }
-        .block{
+
+        .block {
             width: 300px;
             // border: 2px solid #1E50AB;
             // box-shadow: 0 0 20px #858585;
-            .img{
-                overflow: hidden;
-                height: 200px;
-                img{
-                    width: 100%;
-                }
+
+            img {
+                width: 100%;
             }
-            &:hover{
+
+            &:hover {
                 transform: scale(1.05);
                 box-shadow: 0 0 20px #858585;
             }
-            .companiText{
+
+            .companiText {
                 background-color: #1E50AB;
                 color: #fff;
                 text-align: center;
                 padding-top: 10px;
                 padding-bottom: 20px;
                 min-height: 200px;
-                
-                
-                h4{
+
+
+                h4 {
                     margin-bottom: 10px;
                     font-size: 20px;
                     font-weight: 800;
                 }
-                p{
+
+                p {
                     font-size: 14px;
                     font-weight: 200;
                     line-height: 150%;
@@ -113,15 +120,71 @@
                 }
             }
         }
-        
+
     }
 }
 
+.employees_modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #00000079;
+    display: none;
+    top: 0;
+    left: 0;
+
+    .box {
+        margin: 100px auto;
+        max-width: 900px;
+        height: 70vh;
+        background-color: #fff;
+        padding: 20px;
+        padding-top: 30px;
+        border: #1E50AB 4px solid;
+        position: relative;
+        @include f(center, center);
+        .about_clouse{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .block {
+            height: 100%;
+
+            &:nth-child(2) {
+                height: fit-content;
+                padding-left: 20px;
+            }
+            &:nth-child(3) {
+                
+                @include f(center, end);
+            }
+
+            h3 {
+                font-size: 40px;
+                margin-bottom: 20px;
+                color: #1E50AB;
+            }
+            p{
+                opacity: 0.6;
+                font-size: 18px;
+                line-height: 150%;
+            }
+
+            img {
+                max-height: 90%;
+            }
+        }
+
+    }
+}
+.employees_modal_active{
+    display: block;
+}
 
 
-
-@media (max-width: 768px){
-    .employees .box{
+@media (max-width: 768px) {
+    .employees .box {
         justify-content: center;
     }
 }
@@ -129,20 +192,21 @@
 
 
 
-.lists{
+.lists {
     margin-top: 100px;
 
-    .box{
+    .box {
         width: 100%;
-        @include f(center,center );
+        @include f(center, center);
         gap: 10px;
 
-        img{
+        img {
             width: 49%;
         }
     }
-    .tr{
+
+    .tr {
         width: 100%;
-        margin-top: 50px ;
+        margin-top: 50px;
     }
 }

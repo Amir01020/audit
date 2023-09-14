@@ -1,5 +1,12 @@
 
-
+new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
 let btnSubmit = document.querySelector('#btnSubmit')
 let userName = document.querySelector('#name')
 let phone = document.querySelector('#number')

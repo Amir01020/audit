@@ -156,7 +156,7 @@ KOMIL ISHONCH
                         <td>19.09.2022</td>
                         <td>г.Ташкент, Алмазарский район, Себзор МФЙ, 46в-дом </td>
                         <td>+998998281405</td>
-                        
+
                     </tr>
                     <tr>
                         <td>309604672</td>
@@ -164,7 +164,7 @@ KOMIL ISHONCH
                         <td>19.09.2022</td>
                         <td>г.Ташкент, Алмазарский район, Себзор МФЙ, 46в-дом </td>
                         <td>+998998281405</td>
-                        
+
                     </tr>
 
                 </tbody>
@@ -239,9 +239,43 @@ KOMIL ISHONCH
         </div>
     </div>
 </section>
+<section class="thisComment">
+    <div class="cont">
+        <div class="this_comment">
+            <h2 class="textGlav">Отзывы Компании</h2>
+            <button>Оставить отзыв</button>
+        </div>
+        <div class="box">
+            <div class="block">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        {% for i in arr %}
+                        <div class="swiper-slide">
+                            <div class="elem">
+                                <img src="{% static 'img/user.svg' %}" alt="">
+                            </div>
+                            <div class="elem">
+                                <h4>{{i.name}}</h4>
+                                <p>
+                                    {{i.full_text}}
+                                </p>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
 
 {% block script %}
+
 <script defer src="{% static 'js/forms.js' %}"></script>
 {% endblock %}
