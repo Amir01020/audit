@@ -12,10 +12,22 @@ about
 
 {% block content %}
 <section class="project">
+    <div class="projectModlImg">
+
+        <div class="box">
+            <img src="{% static 'img/clouse.svg' %}" alt="" class="clouseProject">
+            <img src="" class="projectImg1 projectImg" alt="">
+            <img src="" class="projectImg2 projectImg" alt="">
+            <img src="" class="projectImg3 projectImg" alt="">
+        </div>
+    </div>
     <div class="cont">
-        <h2 class="textGlav">
-            Наши проекты
-        </h2>
+        <div class="textcontent">
+            <h2 class="textGlav">
+                Наши проекты
+            </h2>
+            <input type="text" placeholder="Поиск" class="searchProject" name="" id="">
+        </div>
         <div class="box">
             <table>
                 <thead>
@@ -27,11 +39,12 @@ about
                         <th>Дата</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     
     
                     {% for item in arr %}
-                    <tr id="{{item.id}}">
+                    <tr id="{{item.id}}" class="projectImg search_my_project" data-time="{{item.data}}" data-img1="media/{{item.project_img1}}" data-img2="media/{{item.project_img2}}" data-img3="media/{{item.project_img3}}">
                         <td>{{item.id}}</td>
                         <td>{{item.stir}}</td>
                         <td>{{item.names}}</td>
@@ -46,11 +59,15 @@ about
             </table>
 
 
-            {% for item in arr %}
-                <!-- <img src="media/{{item.img}}" alt="">   -->
-            {% endfor %}
+            
         </div>
         
     </div>
 </section>
+
+{% endblock %}
+
+
+{% block script %}
+    <script src="{% static 'js/project.js' %}"></script>
 {% endblock %}

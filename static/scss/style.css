@@ -500,6 +500,9 @@ footer .box .block {
   flex-direction: column;
   gap: 10px;
 }
+footer .box .block:nth-child(2) {
+  align-items: center;
+}
 footer .box .block a {
   color: #fff;
   text-decoration: none;

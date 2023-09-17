@@ -19,7 +19,9 @@ class My_news_project(models.Model):
     names = models.CharField("Ташкилотининг номи", max_length=250)
     text = models.CharField("Хлоса", max_length=250)
     data = models.DateField("Дата")
-    img = models.ImageField(upload_to ='media/')
+    project_img1 = models.ImageField(upload_to ='media/')
+    project_img2 = models.ImageField(upload_to ='media/')
+    project_img3 = models.ImageField(upload_to ='media/')
     
 
     def __str__(self):
@@ -52,7 +54,9 @@ class This_project(models.Model):
     names = models.CharField("Ташкилотининг номи", max_length=250)
     text = models.CharField("Хлоса", max_length=250)
     data = models.DateField("Дата")
-    img = models.ImageField(upload_to ='media/')
+    project_img1 = models.ImageField(upload_to ='media/')
+    project_img2 = models.ImageField(upload_to ='media/')
+    project_img3 = models.ImageField(upload_to ='media/')
     
 
     def __str__(self):

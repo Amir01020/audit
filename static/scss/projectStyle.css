@@ -1,12 +1,59 @@
 .project {
   margin-top: 0px !important;
   padding-top: 150px;
+  justify-content: space-between;
+}
+.project .textcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project .textcontent input {
+  width: 320px;
+  padding: 10px;
+  border: 2px solid #1E50AB;
+}
+.project .projectModlImg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4745098039);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.project .projectModlImg .box {
+  border: 4px solid #1E50AB;
+  box-shadow: 0 0 10px #fff;
+  position: relative;
+  height: 90%;
+  max-width: 1140px;
+  background-color: #fff;
+}
+.project .projectModlImg .box .clouseProject {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.project .projectModlImg .box .projectImg {
+  width: 100%;
+}
+.project .projectModlImgActive {
+  display: flex;
 }
 .project h2 {
   margin-bottom: 50px;
 }
 .project .box {
   overflow-x: auto;
+  width: 100%;
+}
+.project table {
   width: 100%;
 }
 .project table th {
@@ -22,4 +69,10 @@
   text-align: center;
   font-size: 12px;
   cursor: pointer;
+}
+.project table .true {
+  display: table-row;
+}
+.project table .false {
+  display: none;
 }/*# sourceMappingURL=projectStyle.css.map */
