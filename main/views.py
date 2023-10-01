@@ -39,3 +39,21 @@ def stat(request):
     arr = My_stat.objects.order_by('-data')
 
     return render(request, 'main/stat.html', {"arr":arr})
+
+
+def comments(request):
+
+    if request.method == 'POST':
+        form = Newe_comment_Forms(request.POST)
+        if form.is_valid:
+            form.save()
+        
+        else:
+            error = 'Форма не коректно заполнина'
+
+
+
+    form = Newe_comment_Forms()
+    arr = Newe_comment.objects.all()
+
+    return render(request, 'main/comment.html', {"arr":arr,"form":form})

@@ -1,12 +1,5 @@
 
-new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-});
+
 let btnSubmit = document.querySelector('#btnSubmit')
 let userName = document.querySelector('#name')
 let phone = document.querySelector('#number')
@@ -36,12 +29,3 @@ btnSubmit.onclick = (event) => {
 
 
 
-let modalComment = document.querySelector('.modalComment')
-let clouseModalForms = document.querySelector('.clouseModalForms')
-let oupenModlComment = document.querySelector('.oupenModlComment')
-oupenModlComment.onclick=()=>{
-    modalComment.classList.add('modalCommentActive')
-}
-clouseModalForms.onclick=()=>{
-    modalComment.classList.remove('modalCommentActive')
-}

@@ -146,23 +146,38 @@ main {
                 }
 
                 &:nth-child(2) {
-                    @include f(start, center);
-                    gap: 2px;
+                    @include f(center, center);
+                    gap: 10px;
 
                     .block {
-                        padding: 30px 40px;
+                        padding: 30px 30px;
+                        // width: 33%;
                         background: rgba(39, 39, 39, 0.81);
                         min-height: 250px;
                         cursor: pointer;
-                        @include f(center, center);
+                        @include f(start, start);
                         flex-direction: column;
+                        gap: 10px;
                         transition: all 0.3s;
-                        text-align: center;
+                        // text-align: center;
 
                         &:hover {
                             transform: scale(1.05);
 
 
+                        }
+
+                        h2 {
+                            font-size: 30px;
+
+                            margin-top: 0;
+                        }
+
+                        li {
+                            color: #fff;
+                            opacity: 0.6;
+                            font-size: 16px;
+                            margin-top: 10px;
                         }
 
                         p {
@@ -581,10 +596,11 @@ footer {
             @include f(start, end);
             flex-direction: column;
             gap: 10px;
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 align-items: center;
             }
-            
+
             a {
                 color: #fff;
                 text-decoration: none;
@@ -664,59 +680,6 @@ footer {
     width: 20%;
 }
 
-.thisComment {
-    margin-top: 100px;
-
-    .this_comment {
-        @include f(space-between, center);
-
-        button {
-            background-color: #1E50AB;
-            padding: 15px 25px;
-            color: #fff;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 150%;
-            border: 0;
-            cursor: pointer;
-        }
-
-    }
-
-    .box {
-        .swiper {
-            width: 100%;
-
-            .swiper-wrapper {
-                width: 100%;
-                padding: 30px 0;
-
-                .swiper-slide {
-                    @include f(start, center);
-                    gap: 10px;
-                    background-color: #1E50AB;
-                    padding: 20px;
-                    color: #fff;
-
-                    .elem {
-                        h4 {
-                            font-size: 20px;
-                            font-weight: 600;
-                            margin-bottom: 20px;
-                        }
-
-                        p {
-                            font-size: 12px;
-                            font-weight: 400;
-                            line-height: 150%;
-                            opacity: 0.6;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 .modalComment {
     width: 100%;
@@ -727,6 +690,7 @@ footer {
     top: 0;
     left: 0;
     z-index: 1;
+
     .box {
         position: relative;
         max-width: 500px;
@@ -734,10 +698,11 @@ footer {
         background-color: #fff;
         margin: 100px auto;
         border: #1E50AB solid 4px;
-        
-        h2{
+
+        h2 {
             margin-bottom: 30px;
         }
+
         form {
             input {
                 width: 100%;
@@ -749,7 +714,8 @@ footer {
                 font-size: 18px;
                 padding: 10px;
             }
-            button{
+
+            button {
                 width: 100%;
                 height: 40px;
                 margin-top: 20px;
@@ -760,10 +726,12 @@ footer {
         }
     }
 }
-.modalCommentActive{
+
+.modalCommentActive {
     display: block;
 }
-.clouseModalForms{
+
+.clouseModalForms {
     width: 30px;
     position: absolute;
     top: 10px;
@@ -771,6 +739,46 @@ footer {
     cursor: pointer;
 }
 
+.navModlHover {
+    position: fixed;
+    background: linear-gradient(180deg, #121212 10.94%, rgba(18, 18, 18, 0) 100%);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+    .navServices {
+        @include f(center, center);
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 20px;
+        background-color: #1E50AB;
+        padding-bottom: 40px;
+        overflow-y: auto;
+        
+    }
+    .navServices1{
+        width: 100%;
+        height: 20px;
+        // background-color: red;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.navModlHoverActive{
+    transform: translateY(0);
+}
 @keyframes marquee-infinite {
     0% {
         transform: translateX(0%);

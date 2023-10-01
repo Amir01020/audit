@@ -129,24 +129,34 @@ main .head .box .elem h2 {
 }
 main .head .box .elem:nth-child(2) {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 2px;
+  gap: 10px;
 }
 main .head .box .elem:nth-child(2) .block {
-  padding: 30px 40px;
+  padding: 30px 30px;
   background: rgba(39, 39, 39, 0.81);
   min-height: 250px;
   cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   flex-direction: column;
+  gap: 10px;
   transition: all 0.3s;
-  text-align: center;
 }
 main .head .box .elem:nth-child(2) .block:hover {
   transform: scale(1.05);
+}
+main .head .box .elem:nth-child(2) .block h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+main .head .box .elem:nth-child(2) .block li {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  margin-top: 10px;
 }
 main .head .box .elem:nth-child(2) .block p {
   color: #FFF;
@@ -569,52 +579,6 @@ footer .myBlock .elem {
   width: 20%;
 }
 
-.thisComment {
-  margin-top: 100px;
-}
-.thisComment .this_comment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.thisComment .this_comment button {
-  background-color: #1E50AB;
-  padding: 15px 25px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
-  border: 0;
-  cursor: pointer;
-}
-.thisComment .box .swiper {
-  width: 100%;
-}
-.thisComment .box .swiper .swiper-wrapper {
-  width: 100%;
-  padding: 30px 0;
-}
-.thisComment .box .swiper .swiper-wrapper .swiper-slide {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 10px;
-  background-color: #1E50AB;
-  padding: 20px;
-  color: #fff;
-}
-.thisComment .box .swiper .swiper-wrapper .swiper-slide .elem h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-.thisComment .box .swiper .swiper-wrapper .swiper-slide .elem p {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 150%;
-  opacity: 0.6;
-}
-
 .modalComment {
   width: 100%;
   height: 100%;
@@ -665,6 +629,46 @@ footer .myBlock .elem {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+.navModlHover {
+  position: fixed;
+  background: linear-gradient(180deg, #121212 10.94%, rgba(18, 18, 18, 0) 100%);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.navModlHover .navServices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 20px;
+  background-color: #1E50AB;
+  padding-bottom: 40px;
+  overflow-y: auto;
+}
+.navModlHover .navServices1 {
+  width: 100%;
+  height: 20px;
+}
+.navModlHover a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navModlHover a:hover {
+  text-decoration: underline;
+}
+
+.navModlHoverActive {
+  transform: translateY(0);
 }
 
 @keyframes marquee-infinite {

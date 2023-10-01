@@ -1,0 +1,45 @@
+.thisComment {
+  padding-top: 100px;
+}
+.thisComment .this_comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.thisComment .this_comment button {
+  background-color: #1E50AB;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  border: 0;
+  cursor: pointer;
+}
+.thisComment .box .swiper {
+  width: 100%;
+}
+.thisComment .box .swiper .swiper-wrapper {
+  width: 100%;
+  padding: 30px 0;
+}
+.thisComment .box .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  background-color: #1E50AB;
+  padding: 20px;
+  color: #fff;
+}
+.thisComment .box .swiper .swiper-wrapper .swiper-slide .elem h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.thisComment .box .swiper .swiper-wrapper .swiper-slide .elem p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  opacity: 0.6;
+}/*# sourceMappingURL=comments.css.map */

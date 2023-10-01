@@ -24,11 +24,13 @@
         <nav>
             <ul>
                 <li><a href="{% url 'home' %}" id="urlBurger">Главная</a></li>
-                <li><a href="{% url 'services' %}" id="urlBurger">Услуги</a></li>
-                <li><a href="{% url 'about' %}" id="urlBurger">О компании</a></li>
+                <li><a href="{% url 'services' %}" id="urlBurger" data-hover="navServices">Услуги</a></li>
+                <li><a href="{% url 'about' %}" id="urlBurger" data-hover="navAbout">О компании</a></li>
                 <li><a href="{% url 'project' %}" id="urlBurger">Заключение</a></li>
                 <li><a href="{% url 'news' %}" id="urlBurger">Новости</a></li>
                 <li><a href="{% url 'stat' %}" id="urlBurger">Статьи</a></li>
+                
+                <li><a href="{% url 'comments' %}">Oтзывы</a></li>
             </ul>
             <ul>
                 <li><a href="">+7 (342) 204-44-77</a></li>
@@ -40,6 +42,17 @@
             </ul>
         </nav>
     </header>
+
+
+    <div class="navModlHover">
+        <div class="navServices">
+            
+        </div>
+        <div class="navServices1"></div>
+        
+    </div>
+
+
     <main>
         {% block content %}
 
@@ -57,6 +70,8 @@
                     <a href="{% url 'project' %}">заключение</a>
                     <a href="{% url 'news' %}">статьи</a>
                     <a href="{% url 'stat' %}">статьи</a>
+                    <a href="{% url 'comments' %}">Oтзывы</a>
+
                 </div>
             </div>
         </div>
@@ -84,6 +99,7 @@
                     <a href="{% url 'project' %}">заключение</a>
                     <a href="{% url 'news' %}">статьи</a>
                     <a href="{% url 'stat' %}">статьи</a>
+                    <a href="{% url 'comments' %}">Oтзывы</a>
                 </div>
 
                 <div class="block">

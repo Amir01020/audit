@@ -22,25 +22,48 @@ KOMIL ISHONCH
             </div>
             <div class="elem">
                 <div class="block">
-                    <p>
-                        Мы ведем общее дело - минимизировать риски, вовремя выявить возможные ошибки, укрепить вашу и
-                        
-                    </p>
+                    <h2>
+                        Мы гарантируем
+                    </h2>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
 
                 </div>
                 <div class="block">
-                    <p>
-                        Право выбора аудитора - вы сами можете выбрать нашего аудитора с богатым опытом работы в
-                       
-                    </p>
+                    <h2>
+                        Мы гарантируем
+                    </h2>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
 
                 </div>
                 <div class="block">
-                    <p>Надежная правовая защита
-                        без затрат на содержание
-                        собственного юридического
-                        отдела
-                    </p>
+                    <h2>
+                        Мы гарантируем
+                    </h2>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
+                    <li>
+                        Минимизировать риски ошибок
+                    </li>
 
                 </div>
             </div>
@@ -171,7 +194,7 @@ KOMIL ISHONCH
     </div>
 </section>
 <div class="cont">
-    <h2 class="textGlav text">Партнёры</h2>
+    <h2 class="textGlav text">Клиенты компании</h2>
 </div>
 <section class="partner">
 
@@ -237,53 +260,7 @@ KOMIL ISHONCH
         </div>
     </div>
 </section>
-<section class="thisComment">
-    <div class="cont">
-        <div class="this_comment">
-            <h2 class="textGlav">Отзывы Компании</h2>
-            <button class="oupenModlComment">Оставить отзыв</button>
-        </div>
-        <div class="box">
-            <div class="block">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
 
-                        {% for i in arr %}
-                        <div class="swiper-slide">
-                            <div class="elem">
-                                <img src="{% static 'img/user.svg' %}" alt="">
-                            </div>
-                            <div class="elem">
-                                <h4>{{i.name}}</h4>
-                                <p>
-                                    {{i.full_text}}
-                                </p>
-                            </div>
-                        </div>
-                        {% endfor %}
-
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="modalComment">
-    <div class="box">
-        <img src="{% static 'img/clouse.svg' %}" class="clouseModalForms" alt="">
-        <h2 class="textGlav">Добавить отзыв</h2>
-        <form method="POST" action="">
-            {% csrf_token %}
-            {{form.name}}
-            {{form.full_text}}
-            <p>{{error}}</p>
-            <button type="submit">Добавить</button>
-        </form>
-    </div>
-</div>
 
 {% endblock %}
 
